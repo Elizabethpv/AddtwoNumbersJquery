@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <link rel="stylesheet" href="Design.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="center">
+        <label>Name</label>
+        <br> <input type="text" name="name" id="name">  </br>  
+       <p></p>
+
+        <label>Malayalam</label>
+        <br> <input type="text" name="number1" id="number1" >  </br>  
+       <p></p>
+
+        <label>English</label>
+        <br><input type="text" name="number2" id="number2"></br>
+        <p></p>
+
+        <label>Maths</label>
+        <br><input type="text" name="number3" id="number3"></br>
+       <p></p>
+        <br><input type="submit" value="Result" name="btnClick" id="btnClick">
+        <p></p>
+        <br>Total Mark is  : <p id="total">Total Mark</p>
+        <p></p>
+        <br>Average Mark is :<p id="average">Average mark</p>
+        
+    </div>
+    
+</body>
+
+<script >
+   $(document).ready(function () {
+        $('#btnClick').click(function () {
+            var number1 = parseInt($('#number1').val());
+            var number2 = parseInt($('#number2').val());
+            var number3 = parseInt($('#number3').val());
+            var total = number1 + number2+number3;
+            var average=total/3;
+            $("#total").text(total);
+            $("#average").text(average);
+
+        });
+    });
+</script>
+</html>

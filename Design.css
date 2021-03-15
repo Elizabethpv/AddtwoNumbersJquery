@@ -1,0 +1,28 @@
+body{
+    text-align: center;  
+}
+.center{
+   
+   margin-top: 50px;
+   margin-left:500px;
+   margin-right: 500px;
+   
+ background-color: rgb(236, 4, 236);
+ background-position: center;
+   
+}
+.center input[type="text"]
+{
+line-height: 1.6;
+ width: 290px;
+ height: 30px;
+ 
+
+}
+.center input[type="submit"]
+{
+    width:300px;
+    height:30px;
+    border-radius: 30px;
+    background-color: rgb(191, 231, 154);
+}
